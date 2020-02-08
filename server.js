@@ -1,6 +1,6 @@
 
-const dotenv = require("dotenv")
-dotenv.config();
+// ETSY SCRAPPER APP
+// =============================================================
 const path = require("path")
 const express = require("express");
 const exphbs = require("express-handlebars");
