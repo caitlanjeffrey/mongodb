@@ -16,7 +16,7 @@ function ParksRecCard(props) {
             <strong>Occupation:</strong> {props.occupation}
           </li>
           <li>
-            <strong>Location:</strong> {props.location}
+            <strong>Quote:</strong> {props.quote}
           </li>
         </ul>
       </div>

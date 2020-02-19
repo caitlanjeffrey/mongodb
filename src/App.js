@@ -1,7 +1,7 @@
 import React, { Component } from "react";
+import Jumbotron from "./components/Jumbotron";
 import ParkRecCard from "./components/ParkRecCard";
 import Wrapper from "./components/Wrapper";
-import Title from "./components/Title";
 import friends from "./friends.json";
 
 class App extends Component {
@@ -21,7 +21,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>Pick Your Parks and Rec Favorite!</Title>
+        <Jumbotron></Jumbotron>
         {this.state.friends.map(friend => (
           <ParkRecCard
             removeFriend={this.removeFriend}
@@ -30,7 +30,7 @@ class App extends Component {
             name={friend.name}
             image={friend.image}
             occupation={friend.occupation}
-            location={friend.location}
+            quote={friend.quote}
           />
         ))}
       </Wrapper>
